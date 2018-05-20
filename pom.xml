@@ -4,7 +4,7 @@
 
   <groupId>com.ravi.cal</groupId>
   <artifactId>RaviCalculator</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>2.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>RaviCalculator</name>
@@ -22,6 +22,20 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+<distributionManagement>
+<repository>
+<id>Calculator-Snapshort</id>
+<name>Calculator-Snapshort</name>
+<url>http://localhost:8081/repository/Calculator-Snapshort/</url>
+</repository>
+
+<snapshotRepository>
+<id>Calculator-Release</id>
+<name>Calculator-Release</name>
+<url>http://localhost:8081/repository/Calculator-Release/</url>
+</snapshotRepository>
+</distributionManagement>
+
 <build>
 	<plugins>
    	<plugin>
